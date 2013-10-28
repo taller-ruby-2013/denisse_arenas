@@ -1,3 +1,5 @@
+<h1> Poniendo titulo a esta cosa </h1>
+
 <%= form_for :post, url: posts_path do |f| %>
 
     <p>
@@ -12,3 +14,5 @@
         <%= f.submit "GUARDÁ TU POST YA" %>
     </p>
 <% end %>
+
+<%= link_to "Back", posts_path %>
