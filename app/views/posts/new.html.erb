@@ -1,18 +1,6 @@
-<h1> Poniendo titulo a esta cosa </h1>
+<h1> Nuevo post </h1>
 
-<%= form_for :post, url: posts_path do |f| %>
-
-    <p>
-        <%= f.label :title %>
-        <%= f.text_field :title%>
-    </p>
-    <p>
-        <%= f.label :text %>
-        <%= f.text_area :text %>
-    </p>
-    <p>
-        <%= f.submit "GUARDÁ TU POST YA" %>
-    </p>
-<% end %>
+<%= render 'form' %>
 
 <%= link_to "Back", posts_path %>
+
